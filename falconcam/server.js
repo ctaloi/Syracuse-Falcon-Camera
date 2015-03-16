@@ -50,7 +50,7 @@
     console.log("a user connected");
   });
 
-  http.listen(8000, function() {
+  http.listen(80, function() {
     console.log("listening");
   });
 
