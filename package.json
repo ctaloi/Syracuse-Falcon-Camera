@@ -1,0 +1,17 @@
+{
+  "name": "WCSFalconCam",
+  "description": "A camera watching some falcons in Syracuse",
+  "version": "0.0.1",
+  "main": "./src/paparazzo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctaloi/Syracuse-Falcon-Camera"
+  },
+  "dependencies": {
+    "btoa": "^1.1.2",
+    "chai": "^0.5.2",
+    "express": "^4.12.2",
+    "mocha": "^1.0.1",
+    "socket.io": "^1.3.5"
+  }
+}
