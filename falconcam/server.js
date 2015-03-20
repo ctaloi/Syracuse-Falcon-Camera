@@ -10,11 +10,11 @@
   };
 
   sendImage2 = function() {
-  var base64Image;
-  base64Image = "data:image/jpeg;base64," + btoa(updatedImage);
-  io.emit("image2 sent", base64Image);
-  // console.log("Sent image2 of " + base64Image.length + " bytes");
-};
+    var base64Image;
+    base64Image = "data:image/jpeg;base64," + btoa(updatedImage);
+    io.emit("image2 sent", base64Image);
+    // console.log("Sent image2 of " + base64Image.length + " bytes");
+ };
 
 
   btoa = require('btoa');
@@ -28,9 +28,9 @@
   io = require("socket.io")(http);
 
   paparazzo1 = new Paparazzo({
-  	host: '66.218.16.11',
-  	port: 80,
-  	path: '/goform/stream?cmd=get&channel=0'
+    host: '66.218.16.11',
+    port: 80,
+    path: '/goform/stream?cmd=get&channel=0'
   });
 
   paparazzo2 = new Paparazzo({
@@ -78,7 +78,8 @@
   });
 
   io.on("connection", function(socket) {
-    console.log("a user connected");
+    var now = Date.now()
+    console.log(now + " a user connected");
   });
 
   http.listen(3000, function() {

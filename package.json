@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "main": "./src/paparazzo",
   "scripts": {
-    "start": "node falconcam/server.js"
+    "start": "node --max-old-space-size=1228 falconcam/server.js"
   },
   "repository": {
     "type": "git",
